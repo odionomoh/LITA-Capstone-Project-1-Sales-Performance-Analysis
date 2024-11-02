@@ -1,7 +1,31 @@
 # LITA-Capstone-Project-1-Sales-Performance-Analysis
 
-# Retail Sales Analysis
+# Project title: Retail Sales Analysis
 
+[Project Overview](#project-overview)
+
+Tools Used
+
+Key Findings
+
+[Featured Projects](#featured-projects)
+
+Detailed Analysis of Retail Sales Performance
+
+Top-Selling Products
+
+Regional Sales Performance
+
+Monthly Sales Trends
+
+Recommendations
+
+Next Steps
+
+Dashboard
+
+
+---
 ## Project Overview
 
 Analyzing sales performance of a retail store to uncover key insights.
@@ -17,6 +41,10 @@ Analyzing sales performance of a retail store to uncover key insights.
 * Top-selling products
 * Regional sales performance
 * Monthly sales trends
+
+
+### Featured Projects:
+---
 
 ## Detailed Analysis of Retail Sales Performance
 ### Top-Selling Products
@@ -46,24 +74,33 @@ Analyzing sales performance of a retail store to uncover key insights.
 * Analyze sales drivers and obstacles.```
   
 ## Dashboard
+![Top Perfoming Product](https://github.com/user-attachments/assets/59cba8a6-d44c-4e23-b9db-240164ce1eb6)
 
+
+![Regional Breakdown](https://github.com/user-attachments/assets/763f87d0-8a6c-44e6-97a8-53251ab9beb6)
+
+
+![Monthly Sales Trend](https://github.com/user-attachments/assets/e2a028c9-0c24-470a-9fff-adae7e7fae9f)
 
 
 ## Files
 
-* `SalesData.xlsx`: Raw sales data
-* `SalesQueries.sql`: SQL queries for data extraction
-* `SalesDashboard.pbix`: Power BI dashboard file
+* `SalesData.xlsx`[Download here](https://docs.google.com/spreadsheets/d/1xpPZfdFjBwxz6qgZIBjoKZ3FTyNQc26L/edit?usp=drive_link&ouid=100692561819122818038&rtpof=true&sd=true): Raw sales data
+* `SalesQueries.sql`[Download here](https://drive.google.com/file/d/1yzC2ckfsxbJ0X5wXwSbJZ7wCvlLNyQoo/view?usp=drive_link): SQL queries for data extraction
+* `SalesDashboard.pbix`[Download here](https://drive.google.com/file/d/1RSD4kLFduoH921EaFHC-Z17-FKArsHDy/view?usp=drive_link): Power BI dashboard file
 
-## License
+### Database Query
 
-[Insert license information, e.g., MIT License]
+### Description
+``` Query 1: Retrieve top-selling products
+SELECT product_name, SUM(sales) AS total_sales
+FROM sales_table
+GROUP BY product_name
+ORDER BY total_sales DESC
+```
 
-
-Step 3: Upload files
-
-Create the following folders and upload your files:
-
-- Data/: SalesData.xlsx
-- SQL/: SalesQueries.sql
-- PowerBI/: SalesDashboard.pbix
+``` Query 2: Retrieve regional sales performance
+SELECT region, SUM(sales) AS total_sales
+FROM sales_table
+GROUP BY region;
+```
