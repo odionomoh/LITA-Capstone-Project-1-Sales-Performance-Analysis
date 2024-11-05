@@ -92,15 +92,24 @@ Analyzing sales performance of a retail store to uncover key insights.
 ### Database Query
 
 ### Description
-``` Query 1: Retrieve top-selling products
-SELECT product_name, SUM(sales) AS total_sales
-FROM sales_table
-GROUP BY product_name
-ORDER BY total_sales DESC
+``` Query 1: SELECT 
+    [Product], 
+    SUM([Sales_Amount]) AS TotalSales
+FROM 
+    [Tablename]
+GROUP BY 
+    [Product]
+ORDER BY 
+    TotalSales DESC;
 ```
 
-``` Query 2: Retrieve regional sales performance
-SELECT region, SUM(sales) AS total_sales
-FROM sales_table
-GROUP BY region;
+``` Query 2: SELECT TOP 1 
+   [Product],
+    SUM([Sales_Amount]) AS TotalSalesValue
+FROM 
+    [Tablename]
+GROUP BY 
+    [Product]
+ORDER BY 
+    TotalSalesValue DESC;
 ```
