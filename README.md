@@ -87,7 +87,7 @@ Analyzing sales performance of a retail store to uncover key insights.
 
 * `SalesData.xlsx`[Download here](https://docs.google.com/spreadsheets/d/1xpPZfdFjBwxz6qgZIBjoKZ3FTyNQc26L/edit?usp=drive_link&ouid=100692561819122818038&rtpof=true&sd=true): Raw sales data
 * `SalesQueries.sql`[Download here](https://drive.google.com/file/d/1yzC2ckfsxbJ0X5wXwSbJZ7wCvlLNyQoo/view?usp=drive_link): SQL queries for data extraction
-* `SalesDashboard.pbix`[Download here](https://drive.google.com/file/d/1RSD4kLFduoH921EaFHC-Z17-FKArsHDy/view?usp=drive_link): Power BI dashboard file
+* `SalesDashboard.pbix`[Download here](https://drive.google.com/file/d/1-3d4krRiMRTx7xatO1Y2rxlPQ85KK_Hf/view?usp=drive_link): Power BI dashboard file
 
 ### Database Query
 
