@@ -236,7 +236,8 @@ Total Sales: ₦10,587,500 million
 ### Database Query
 
 ### Description
-``` Query 1: SELECT 
+``` Query 1:
+SELECT 
     [Product], 
     SUM([Sales_Amount]) AS TotalSales
 FROM 
@@ -247,7 +248,8 @@ ORDER BY
     TotalSales DESC;
 ```
 
-``` Query 2: SELECT TOP 1 
+``` Query 2:
+SELECT TOP 1 
    [Product],
     SUM([Sales_Amount]) AS TotalSalesValue
 FROM 
