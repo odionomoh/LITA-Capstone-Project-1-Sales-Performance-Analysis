@@ -8,6 +8,12 @@ Tools Used
 
 Key Findings
 
+Excel Analysis
+
+SQL Analysis
+
+Power BI Analysis
+
 [Featured Projects](#featured-projects)
 
 Detailed Analysis of Retail Sales Performance
@@ -24,6 +30,7 @@ Next Steps
 
 Dashboard
 
+Files
 
 ---
 ## Project Overview
@@ -43,8 +50,104 @@ Analyzing sales performance of a retail store to uncover key insights.
 * Monthly sales trends
 
 
-### Featured Projects:
+## Excel Analysis
+
+## Sales Performance Dashboard
+
+- Created using Excel pivot tables and charts to visualize sales trends.
+- Includes:
+    - Top-selling products
+    - Regional sales breakdown
+    - Monthly sales trends
+ 
+## Key Excel Functions Used
+
+- SUMIFS for conditional summing
+- AVERAGEIFS for conditional averaging
+- PIVOTTABLES for data summarization
+- CHARTS for data visualization
+
+## Formula Usage and Applications
+
+- Used SUMIFS to calculate total sales by region and product category.
+- Applied AVERAGEIFS to determine average monthly sales by product.
+- Created pivot tables to summarize sales data by quarter and region.
+- Designed charts to visualize top-selling products and monthly sales trends.
+
+
+## SQL Analysis
+
+## Database Query Overview
+
+Conducted SQL queries to extract and analyze sales data from the database.
+
+## Key Queries
+
+- Sales by product category
+- Top-selling products by region
+- Monthly sales performance
+- Regional sales breakdown
+
+## Key SQL Concepts Used
+
+- SELECT statements
+- JOIN clauses
+- GROUP BY and HAVING
+- SUBQUERIES
+- AGGREGATE functions (SUM, AVG, COUNT)
+
+## Example Queries
+
+``` Query 1:
+SELECT 
+    [Product], 
+    SUM([Sales_Amount]) AS TotalSales
+FROM 
+    [Tablename]
+GROUP BY 
+    [Product]
+ORDER BY 
+    TotalSales DESC;
+```
+
+``` Query 2:
+SELECT TOP 1 
+   [Product],
+    SUM([Sales_Amount]) AS TotalSalesValue
+```
+
+
+## Power BI Analysis
+
+Power BI Dashboard
+
+Created interactive and dynamic dashboards using Power BI to visualize sales trends and insights.
+
+## Key Visualizations
+
+- Top-selling products by region
+- Monthly sales performance
+- Regional sales breakdown
+- Product category sales comparison
+
+## Key Power BI Features Used
+
+- Data Modeling
+- DAX Formulas
+- Visualization Best Practices
+- Interactive Filtering
+
+## Example Usage
+
+- Used Power BI to create a sales performance dashboard with drill-down capabilities.
+- Implemented DAX formulas to calculate year-over-year sales growth.
+- Designed visualizations to showcase top-selling products by region.
+- Applied interactive filtering to enable dynamic exploration.
+
 ---
+
+
+### Featured Projects:
 
 ## Detailed Analysis of Retail Sales Performance
 ### Top-Selling Products Analysis
@@ -233,25 +336,7 @@ Total Sales: ₦10,587,500 million
 * `SalesQueries.sql`[Download here](https://drive.google.com/file/d/1yzC2ckfsxbJ0X5wXwSbJZ7wCvlLNyQoo/view?usp=drive_link): SQL queries for data extraction
 * `SalesDashboard.pbix`[Download here](https://drive.google.com/file/d/1-3d4krRiMRTx7xatO1Y2rxlPQ85KK_Hf/view?usp=drive_link): Power BI dashboard file
 
-### Database Query
 
-### Description
-``` Query 1:
-SELECT 
-    [Product], 
-    SUM([Sales_Amount]) AS TotalSales
-FROM 
-    [Tablename]
-GROUP BY 
-    [Product]
-ORDER BY 
-    TotalSales DESC;
-```
-
-``` Query 2:
-SELECT TOP 1 
-   [Product],
-    SUM([Sales_Amount]) AS TotalSalesValue
 FROM 
     [Tablename]
 GROUP BY 
